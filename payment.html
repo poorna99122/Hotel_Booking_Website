@@ -13,12 +13,41 @@
             background-color: #e0e0e0;
         }
         header{
-            
+            height: 100px;
+            width: 100%;
+            background-attachment: fixed;
             background-color: rosybrown;
+            position: relative;
         }
         footer{
-            
+            height: 100px;
+            width: 100%;
+            background-attachment: fixed; 
             background-color: rosybrown;
+        }
+        .socialnetwork{
+           position: absolute;
+           right: 0;
+           
+       }
+       .contact{
+          position: absolute;
+          left: 0;
+           
+
+       } 
+        .logo{
+            position: absolute;
+            vertical-align: center;
+            text-decoration: none;
+          
+        }
+        .login{
+            position: absolute;
+            top: 5%;
+            right: 0;
+            color: black;
+            text-decoration: none;
         }
         .detail{
             background-color:rgb(132,136,139);
@@ -43,12 +72,12 @@
 <body>
     <div class="main">
    
-      <header>
-        
-            <img src="assests\images\logo.png" alt="logo" style="height: 60px; width: 60px;"><br>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="login.html" target="_blank">Login</a>
-        </header>
+        <header class="header" style="color: rosybrown;">
+            <img src="assests\images\logo.png" alt="logo"  style="height: 60; width: 60px;" class="logo"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="login.html" target="_self" class="login">Login</a>
+ 
+       </header>
 
 
 
@@ -80,26 +109,31 @@
         
             <strong>Tarrif Breakdown:</strong> Rs 1000 x 2 Adults x 5 Nights <br> <br>
             <strong>Total Amount:</strong> Rs 10000 <br> <br>
-            <a href="payment.html">Pay Now</a>
+            
         </div>
+        <a href="payment.html" style="text-decoration: none; color: black; padding: 10px;">Pay Now</a>
+        <br>
+        <br>
         
 
            </div>
    
      
-       <footer>
+           <footer class="footer">
             <br>
-            <a href="contact.html" target="_blank">Contact Us</a><br>
             
-            <a href="https://www.facebook.com"><img src="assests/images/facebook.png" alt="" style="height: 20px; width: 22px;"></a>
-            <a href="https://www.instagram.com"><img src="assests/images/instagram.png" alt="" style="height: 20px; width: 22px;"></a>
-            <a href="https://twitter.com"><img src="assests/images/twitter.png" alt="" style="height: 20px; width: 22px;"></a>
+            <a href="contact.html" target="_blank" class="contact" style="text-decoration: none; color: black;" >Contact Us</a><br>
+            <div class="socialnetwork">
+            
+            <a href="https://www.facebook.com"><img src="assests/images/facebook.png"  alt="" style="height: 20px; width: 22px;"></a>
+            <a href="https://www.instagram.com"><img src="assests/images/instagram.png" alt=""   style="height: 20px; width: 22px;" ></a>
+            <a href="https://twitter.com"><img src="assests/images/twitter.png" alt=""  style="height: 20px; width: 22px;"></a>
+        </div>
             <br>
-            2020 ROOM SEARCH PVT LTD
-
-
-
-        </footer>
+            <p class="content" style="text-align: center;" >
+                2020 ROOM SEARCH PVT LTD
+            </p>
+         </footer>
 
       
     </div>
