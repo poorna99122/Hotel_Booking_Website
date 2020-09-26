@@ -12,34 +12,51 @@
             
             background-color: #e0e0e0;
         }
-        header{
+        .header{
             height: 100px;
             width: 100%;
+            position: relative;
             background-attachment: fixed;
             background-color: rosybrown;
             position: relative;
+            display: flex;
+            
         }
-        footer{
+         
+        .footer{
             height: 100px;
             width: 100%;
+            position: relative;
             background-attachment: fixed; 
             background-color: rosybrown;
+            display: flex;
         }
         .socialnetwork{
            position: absolute;
            right: 0;
-           
+           margin-right: 1%;
+          margin-top: 3%;
        }
        .contact{
           position: absolute;
           left: 0;
+          margin-left: 1%;
+          margin-top: 3%;
            
 
        } 
-        .logo{
+       .content{
+           position: absolute;
+           bottom: 10px;
+           text-align: center;
+           margin-left: 45%;
+           margin-top: 5%;
+       }
+       .logo{
             position: absolute;
             vertical-align: center;
-            text-decoration: none;
+            margin-left: 1%;
+            margin-top: 1%;
           
         }
         .login{
@@ -48,6 +65,8 @@
             right: 0;
             color: black;
             text-decoration: none;
+            margin-top: 2%;
+            margin-right: 1.5%;
         }
         #img1{
             background-color:rgb(132,136,139);
@@ -55,6 +74,8 @@
             margin: 2%;
             color: black;
             text-decoration: none;
+            display: flex;
+            flex-direction: row;
             
         }
         #img2{
@@ -88,6 +109,9 @@
         }
         .block{
             text-decoration: none;
+            display: flex;
+           
+            
         }
        
 
@@ -120,14 +144,15 @@
         <br>
               <div class="block">
 
-             <span>
+             
             <div id="img1" >
          <a href="detail.html">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="list-view" alt="" style="height: 200px; width: 250px;"><br>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="list-view" alt="" style="height: 200px; width: 250px;">
              
             <h3 >Radisson Blu Hotel</h3>
              5 Star <br> <br>
              New Delhi <br>
+            
            
             </a>
         </div>
@@ -137,15 +162,17 @@
              4.5 Star <br> <br>
              New Delhi <br> 
             </div>
-        </span>
+        
              
-            <div id="img3">
-             <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="" style="height: 200px; width: 250px;"><br>
-             <h3>Taj Palace</h3>
-             4.0 Star <br> <br>
-             New Delhi <br>
-            </div>
+            
         </div>
+
+        <div id="img3">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="" style="height: 200px; width: 250px;"><br>
+            <h3>Taj Palace</h3>
+            4.0 Star <br> <br>
+            New Delhi <br>
+           </div>
             
 
             <div class="mapview">

@@ -12,34 +12,53 @@
            
             background-color: #e0e0e0;
         }
-        header{
+        .table{
+            border: 1px solid black;
+            position: absolute;
+        }
+        .header{
             height: 100px;
             width: 100%;
             background-attachment: fixed;
             background-color: rosybrown;
             position: relative;
+            display: flex;
         }
-        footer{
+        .footer{
             height: 100px;
             width: 100%;
             background-attachment: fixed; 
             background-color: rosybrown;
+            display: flex;
+            position: relative;
         }
+        .Content_Div1{
+            display: flex;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 10%;
+        }
+        
         .socialnetwork{
-           position: absolute;
+            position: absolute;
            right: 0;
+           margin-right: 1%;
+          margin-top: 3%;
            
        }
        .contact{
-          position: absolute;
+        position: absolute;
           left: 0;
+          margin-left: 1%;
+          margin-top: 3%;
            
 
        } 
         .logo{
             position: absolute;
             vertical-align: center;
-            text-decoration: none;
+            margin-left: 1%;
+            margin-top: 1%;
           
         }
         .login{
@@ -48,6 +67,8 @@
             right: 0;
             color: black;
             text-decoration: none;
+            margin-top: 2%;
+            margin-right: 1.5%;
         }
         #img1{
             margin-top: 2%;
@@ -59,12 +80,47 @@
             margin-left: 4%;
             margin-bottom: 1%;
         }
-        #content{
+        .info{
             margin-top: 1%;
             margin-left: 4%;
             margin-right: 4%;
             margin-bottom: 2%;
+            
         }
+        .content1{
+            position: absolute;
+           bottom: 10px;
+           text-align: center;
+           margin-left: 45%;
+           margin-top: 5%;
+        }
+        .form{
+            margin-top: 10%;
+            margin-left: 10%;
+            
+        }
+        .adults{
+            margin-bottom: 10%;
+            
+        }
+        .name{
+            margin-bottom: 10%;
+        }
+        .from{
+            margin-bottom: 10%;
+        }
+        .to{
+            margin-bottom: 10%;
+        }
+        .total{
+            margin-bottom: 10%;
+        }
+        .submit{
+            text-align: center;
+        }
+      
+
+
     </style>
 </head>
 <body>
@@ -78,67 +134,83 @@
  
        </header>
 
+         
+      
+        <div class="Content_Div">
+            <div class="Content_Div1">
 
         
-        <div class="Content Div">
-            <div id="img1">
+                <div id="img1">
 
             
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  alt="" style="height: 500px; width: 500px;"><br>
-            <!--<a href="payment.html">Book Now</a><br>-->
-        </div>
-
-           <div id="form">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  alt="" style="height: 500px; width: 500px;"><br>
+                    <!--<a href="payment.html">Book Now</a><br>-->
+                </div>
+          
+                <div class="form">
 
            
-            <form action="payment.html">
-
-            
-            <label for="adults" >Adults:</label>
-            <input type="number" min="1" max="" required> <br>
-            <label for="name" >Name:</label>
-            <input type="text" name="name" id=""> <br>
-            <label for="from" >From Date:</label>
-            <input type="date" name="from" id=""> <br>
-            <label for="to" >To Date:</label>
-            <input type="date" name="to" id=""> <br>
-            <label for="total" >Total:</label>
-            <input type="text" name="" id="" disabled> <br>
-            <input type="submit" name="" value="Book Now" id="">
-
-
-
-            </form>
-        </div>
-
-
-
-
-
-
-             <div id="content">
-
+                    <form action="payment.html">
+        
+                    <div class="adults">
+                        <label for="adults" >Adults: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" min="1" max="" required > <br>
+                    </div>
+                    <div class="name">
+                        <label for="name" >Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="name" id=""> <br>
+                    </div>
+                    
+                    <div class="from">
+                        <label for="from" >From Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="date" name="from" id=""> <br>
+                    </div>
+                    <div class="to">
+                        <label for="to" >To Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="date" name="to" id=""> <br>
+                    </div>
+                    <div class="total">
+                        <label for="total" >Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="" id="" disabled> <br>
+                    </div>
+                   <div class="submit">
+                    <input type="submit" name="" value="Book Now" id="">
+                   </div>
+                </form>
+                </div>
+        
+        
+                    
              
-
-            <h3>Radisson Blu Hotel</h3><br>
-            RATING <br> <br>
-            5 Star <br> <br>
-            AMENITIES <br> <br>
-            <ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
-
-
-            
-           <br>  <h5>DESCRIPTION</h5> <br>
-        <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
+           
+           
+       
     </div>
+
+
+
+
+
+
+             <div class="info">
+                <h3>Radisson Blu Hotel</h3><br>
+                RATING <br> <br>
+                5 Star <br> <br>
+                AMENITIES <br> <br>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <br>  
+                <h5>DESCRIPTION</h5> <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                 </p>
+    
+             </div>
         </div>
 
 
@@ -156,7 +228,7 @@
             <a href="https://twitter.com"><img src="assests/images/twitter.png" alt=""  style="height: 20px; width: 22px;"></a>
         </div>
             <br>
-            <p class="content" style="text-align: center;" >
+            <p class="content1" style="text-align: center;" >
                 2020 ROOM SEARCH PVT LTD
             </p>
          </footer>
