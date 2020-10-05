@@ -5,63 +5,76 @@
         Detail
     </title>
     <style>
-        html,body{
+        html,
+        body {
             height: 100%;
             width: 100%;
             margin: 0;
-           
+
             background-color: #e0e0e0;
         }
-        .table{
+
+        .table {
             border: 1px solid black;
             position: absolute;
         }
-        .header{
-            height: 100px;
+
+        .header {
+            height: 80px;
             width: 100%;
-            background-attachment: fixed;
+            position: fixed;
+            /* background-attachment: fixed; */
             background-color: rosybrown;
-            position: relative;
-            display: flex;
+            
+           left: 0;
+           top: 0;
+           z-index: 90;
         }
-        .footer{
-            height: 100px;
+
+        .footer {
+            height: 80px;
             width: 100%;
-            background-attachment: fixed; 
+            position: fixed;
+            /* background-attachment: fixed; */
             background-color: rosybrown;
-            display: flex;
-            position: relative;
+            /* display: flex; */
+            bottom: 0;
+            left: 0;
         }
-        .Content_Div1{
+
+        .Content_Div1 {
             display: flex;
             margin-top: 5%;
             margin-bottom: 5%;
             margin-left: 10%;
         }
-        
-        .socialnetwork{
-            position: absolute;
-           right: 0;
-           margin-right: 1%;
-          margin-top: 3%;
-           
-       }
-       .contact{
-        position: absolute;
-          left: 0;
-          margin-left: 1%;
-          margin-top: 3%;
-           
 
-       } 
-        .logo{
+        .socialnetwork {
+            position: absolute;
+            right: 0;
+            margin-right: 1%;
+            margin-top: 0.5%;
+        }
+
+        .contact {
+            position: absolute;
+            left: 0;
+            margin-left: 1%;
+            margin-top: 0.5%;
+
+
+        }
+
+
+        .logo {
             position: absolute;
             vertical-align: center;
             margin-left: 1%;
             margin-top: 1%;
-          
+
         }
-        .login{
+
+        .login {
             position: absolute;
             top: 5%;
             right: 0;
@@ -70,129 +83,142 @@
             margin-top: 2%;
             margin-right: 1.5%;
         }
-        #img1{
+
+        #img1 {
             margin-top: 2%;
             margin-left: 4%;
             margin-right: 4%;
         }
-        #form{
+
+        #form {
             margin-right: 4%;
             margin-left: 4%;
             margin-bottom: 1%;
         }
-        .info{
+
+        .info {
             margin-top: 1%;
             margin-left: 4%;
             margin-right: 4%;
             margin-bottom: 2%;
-            
+
         }
-        .content1{
+
+        .content1 {
             position: absolute;
-           bottom: 10px;
-           text-align: center;
-           margin-left: 45%;
-           margin-top: 5%;
+            bottom: 10px;
+            text-align: center;
+            margin-left: 45%;
+            margin-top: 5%;
         }
-        .form{
+
+        .form {
             margin-top: 10%;
             margin-left: 10%;
-            
+
         }
-        .adults{
+
+        .adults {
             margin-bottom: 10%;
-            
+
         }
-        .name{
-            margin-bottom: 10%;
-        }
-        .from{
-            margin-bottom: 10%;
-        }
-        .to{
+
+        .name {
             margin-bottom: 10%;
         }
-        .total{
+
+        .from {
             margin-bottom: 10%;
         }
-        .submit{
+
+        .to {
+            margin-bottom: 10%;
+        }
+
+        .total {
+            margin-bottom: 10%;
+        }
+
+        .submit {
             text-align: center;
         }
-      
-
-
     </style>
 </head>
+
 <body>
     <div class="main">
-   
+
 
         <header class="header" style="color: rosybrown;">
-            <img src="assests\images\logo.png" alt="logo"  style="height: 60; width: 60px;" class="logo"><br>
+            <img src="assests\images\logo.png" alt="logo" style="height: 60; width: 60px;" class="logo"><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="login.html" target="_self" class="login">Login</a>
- 
-       </header>
 
-         
-      
+        </header>
+
+
+
         <div class="Content_Div">
             <div class="Content_Div1">
 
-        
+
                 <div id="img1">
 
-            
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  alt="" style="height: 500px; width: 500px;"><br>
+
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""
+                        style="height: 500px; width: 500px;"><br>
                     <!--<a href="payment.html">Book Now</a><br>-->
                 </div>
-          
+
                 <div class="form">
 
-           
+
                     <form action="payment.html">
-        
-                    <div class="adults">
-                        <label for="adults" >Adults: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="number" min="1" max="" required > <br>
-                    </div>
-                    <div class="name">
-                        <label for="name" >Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="name" id=""> <br>
-                    </div>
-                    
-                    <div class="from">
-                        <label for="from" >From Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="date" name="from" id=""> <br>
-                    </div>
-                    <div class="to">
-                        <label for="to" >To Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="date" name="to" id=""> <br>
-                    </div>
-                    <div class="total">
-                        <label for="total" >Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" name="" id="" disabled> <br>
-                    </div>
-                   <div class="submit">
-                    <input type="submit" name="" value="Book Now" id="">
-                   </div>
-                </form>
+
+                        <div class="adults">
+                            <label for="adults">Adults:
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="number" min="1" max="" required> <br>
+                        </div>
+                        <div class="name">
+                            <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" name="name" id=""> <br>
+                        </div>
+
+                        <div class="from">
+                            <label for="from">From
+                                Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="date" name="from" id=""> <br>
+                        </div>
+                        <div class="to">
+                            <label for="to">To Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="date" name="to" id=""> <br>
+                        </div>
+                        <div class="total">
+                            <label
+                                for="total">Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" name="" id="" disabled> <br>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" name="" value="Book Now" id="">
+                        </div>
+                    </form>
                 </div>
-        
-        
-                    
-             
-           
-           
-       
-    </div>
 
 
 
 
 
 
-             <div class="info">
+
+            </div>
+
+
+
+
+
+
+            <div class="info">
                 <h3>Radisson Blu Hotel</h3><br>
                 RATING <br> <br>
                 5 Star <br> <br>
@@ -204,39 +230,47 @@
                     <li>Fitness center</li>
                     <li>Pool</li>
                 </ul>
-                <br>  
+                <br>
                 <h5>DESCRIPTION</h5> <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                 </p>
-    
-             </div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                </p>
+
+            </div>
         </div>
 
 
 
-            
+
 
         <footer class="footer">
             <br>
-            
-            <a href="contact.html" target="_blank" class="contact" style="text-decoration: none; color: black;" >Contact Us</a><br>
+
+            <a href="contact.html" target="_blank" class="contact" style="text-decoration: none; color: black;">Contact
+                Us</a><br>
             <div class="socialnetwork">
-            
-            <a href="https://www.facebook.com"><img src="assests/images/facebook.png"  alt="" style="height: 20px; width: 22px;"></a>
-            <a href="https://www.instagram.com"><img src="assests/images/instagram.png" alt=""   style="height: 20px; width: 22px;" ></a>
-            <a href="https://twitter.com"><img src="assests/images/twitter.png" alt=""  style="height: 20px; width: 22px;"></a>
-        </div>
+
+                <a href="https://www.facebook.com"><img src="assests/images/facebook.png" alt=""
+                        style="height: 20px; width: 22px;"></a>
+                <a href="https://www.instagram.com"><img src="assests/images/instagram.png" alt=""
+                        style="height: 20px; width: 22px;"></a>
+                <a href="https://twitter.com"><img src="assests/images/twitter.png" alt=""
+                        style="height: 20px; width: 22px;"></a>
+            </div>
             <br>
-            <p class="content1" style="text-align: center;" >
+            <p class="content1" style="text-align: center;">
                 2020 ROOM SEARCH PVT LTD
             </p>
-         </footer>
+        </footer>
 
 
 
-        </div>
-     
+    </div>
+
 </body>
 
 
